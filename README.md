@@ -96,10 +96,15 @@ All the ViewModels in this project rely on the `OpenLibraryService` class to fac
 ## Screenshots
 **Search Page**
 <img src="./images/search.png" width="400">
+
+
 **Book Details Page**
 <img src="./images/book_details.png">
+
+
 **Author Page**
 <img src="./images/author.png" >
+
 
 ## Documentation
 For more detailed information, you can refer to the [Project Documentation](./docs/Documentation.pdf).
