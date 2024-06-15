@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BookSearch_UWP_fr.AuthorPage" BaseTypeListCollapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="AuthorPageViewModel" Type="BookSearch_UWP_fr.ViewModels.AuthorPageViewModel">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.195" Y="0.414" Height="0.182" Width="2.061" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAQBAAAAAAAAAAAAACAAAAQ=</HashCode>
+      <FileName>Views\AuthorPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AuthorPageViewModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BookSearch_UWP_fr.BookDetailsPage" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="BookDetailsViewModel" Type="BookSearch_UWP_fr.ViewModels.BookDetailsViewModel">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.233" Y="0.478" Height="0.182" Width="2.252" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAQAAAAAAQAAAAgAIAAAAIAACAAAAA=</HashCode>
+      <FileName>Views\BookDetailsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BookDetailsViewModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BookSearch_UWP_fr.MainPage" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="SearchPageViewModel" Type="BookSearch_UWP_fr.ViewModels.SearchPageViewModel">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.155" Y="0.262" Height="0.182" Width="1.65" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAQAAAAEAAAAAAQAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SearchPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SearchPageViewModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BookSearch_UWP_fr.Models.AuthorModel">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQACAAAAAQAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\AuthorModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookSearch_UWP_fr.Models.SearchHistoryItemModel">
+    <Position X="10.25" Y="2" Width="2" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAACAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SearchHistoryItemModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookSearch_UWP_fr.ViewModels.BookModel">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAgAEQAgAAAAAAAgAAAAAARAAAIAAAAAAA=</HashCode>
+      <FileName>Models\BookModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookSearch_UWP_fr.ViewModels.AuthorPageViewModel" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="2.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAABIAAACAAIgAAAKBAAIAQAgABAASAAAAAAAQAAAAA=</HashCode>
+      <FileName>ViewModels\AuthorPageViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_openLibraryService" />
+      <Property Name="AuthorModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookSearch_UWP_fr.ViewModels.BookDetailsViewModel" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_openLibraryService" Type="BookSearch_UWP_fr.Services.OpenLibraryService" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="3.93" />
+        <Point X="6.25" Y="4.054" />
+        <Point X="6.25" Y="4.054" />
+        <Point X="6.25" Y="5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAEAAAgABAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BookDetailsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_openLibraryService" />
+      <Property Name="Book" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookSearch_UWP_fr.ViewModels.RelayCommand" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.187" />
+  </Class>
+  <Class Name="BookSearch_UWP_fr.ViewModels.SearchPageViewModel" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="2.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="SearchResults" Type="BookSearch_UWP_fr.ViewModels.BookModel">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-2.373" Y="0.072" Height="0.182" Width="2.307" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_openLibraryService" Type="BookSearch_UWP_fr.Services.OpenLibraryService" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="4.132" />
+        <Point X="8.75" Y="5.75" />
+        <Point X="7.25" Y="5.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SearchHistoryItemModel" Type="BookSearch_UWP_fr.Models.SearchHistoryItemModel">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.055" Y="0.06" Height="0.182" Width="1.65" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAABAAAAAACghABAJQAACAAAgAAEAEAAAAAABAIAABI=</HashCode>
+      <FileName>ViewModels\SearchPageViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_openLibraryService" />
+      <Property Name="SearchCommand" />
+      <Property Name="RelayCommand" />
+      <Property Name="SearchHistoryItemModel" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="SearchResults" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookSearch_UWP_fr.Services.OpenLibraryService">
+    <Position X="5.25" Y="5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAIBEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\OpenLibraryService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="System.Windows.Input.ICommand" Collapsed="true">
+    <Position X="10.75" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

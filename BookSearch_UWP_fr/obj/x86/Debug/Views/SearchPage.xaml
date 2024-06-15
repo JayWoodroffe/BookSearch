@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="BookSearch_UWP_fr.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:BookSearch_UWP_fr.ViewModels"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    xmlns:local="using:BookSearch_UWP_fr.Services">
+
+    <Page.Resources>
+        <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    </Page.Resources>
+
+
+
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Search Section -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBox x:ConnectionId='5' x:Name="SearchTextBox" Width="300" PlaceholderText="Search for books..." 
+                     Text="{Binding SearchText, Mode=TwoWay}"/>
+            <Button Content="Search" Command="{Binding SearchCommand}" Margin="10,0,0,0"/>
+        </StackPanel>
+
+        <ComboBox Grid.Row="1" Width="200" ItemsSource="{Binding SearchCriteriaOptions}" 
+                  SelectedItem="{Binding SelectedSearchCriteria, Mode=TwoWay}" 
+                   SelectedIndex="0" 
+                  Margin="0,0,0,10"/>
+        
+       
+
+
+        <!--list of books-->
+        <ListView x:ConnectionId='2' Grid.Row="3" ItemsSource="{Binding SearchResults}"
+                  IsItemClickEnabled="True"
+                                            >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <Image Source="{Binding CoverImage}" Width="50" Height="70"/>
+                        <StackPanel Margin="10,0,0,0">
+                            <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Author}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ProgressRing x:ConnectionId='3' x:Name="LoadingIndicator" IsActive="{Binding IsLoading}" 
+                  Visibility="{Binding IsLoading, Converter={StaticResource BoolToVisibilityConverter}}"
+                  HorizontalAlignment="Center" Margin="0,200,0,0"
+                  Width="70" Height="70" Grid.Row="2" />
+    </Grid>
+</Page>
+
